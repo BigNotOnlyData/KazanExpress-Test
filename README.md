@@ -17,7 +17,12 @@
 + Проведены исследования различных архитектур нейросетей с одним входом (либо картинка, либо текст), а также с двойным входом (текст и картинка). Идея конкатенации эмбеддингов текста и картинки почерпнута из [статьи](https://www.researchgate.net/publication/347688606_Image_and_Text_fusion_for_UPMC_Food-101_using_BERT_and_CNNs).
 + В модели с двойным входом (лучшая модель) каждый блок, отвечающий за свою модальность, обучался отдельно, как самостоятельная модель. Далее обученные блоки конкатенируются с отбрасыванием последних слоев классификации, после чего добавлен общий слой классификации. 
 
+## Multimodal model (Fusion model)
 ![Диаграмма](img/Диаграмма.png)
+
+Модели трансформеров:
++ BERT - [cointegrated/rubert-tiny2](https://huggingface.co/cointegrated/rubert-tiny2)
++ CLIP - [openai/clip-vit-base-patch32](https://huggingface.co/openai/clip-vit-base-patch32)
 
 ## Результаты исследований
 |Модель|Модальность|f1-train|f1-val|
@@ -30,6 +35,9 @@
 |Efficientnet_b1|Image|0.4741|0.4594|
 |CLIP|Image|0.6293|0.5665|
 |BERT+CLIP|Text+Image|0.9209|**0.8842**|
+
+
+
 
 
 
