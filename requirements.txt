@@ -1,0 +1,11 @@
+nltk==3.8.1
+numpy==1.22.4
+pandas==1.5.3
+Pillow==8.4.0
+pyarrow==9.0.0
+pymorphy2==0.9.1
+scikit-learn==1.2.2
+torch @ https://download.pytorch.org/whl/cu118/torch-2.0.0%2Bcu118-cp310-cp310-linux_x86_64.whl#sha256=4b690e2b77f21073500c65d8bb9ea9656b8cb4e969f357370bbc992a3b074764
+torchvision @ https://download.pytorch.org/whl/cu118/torchvision-0.15.1%2Bcu118-cp310-cp310-linux_x86_64.whl#sha256=9a679fa37a741018c804234693bbac3d487fb3dd55ee73f6b33677b177c8c07a
+tqdm==4.65.0
+transformers==4.28.1
